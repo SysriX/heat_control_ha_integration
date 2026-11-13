@@ -1,0 +1,23 @@
+{
+  "domain": "heat_control",
+  "name": "Heat Control",
+  "after_dependencies": [
+    "climate",
+    "group",
+    "input_datetime",
+    "input_text",
+    "recorder",
+    "presence_sim"
+  ],
+  "codeowners": [
+    "@SysriX"
+  ],
+  "dependencies": [
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/SysriX/heat_control_ha_integration",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/SysriX/heat_control_ha_integration/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

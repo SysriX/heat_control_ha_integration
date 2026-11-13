@@ -1,0 +1,28 @@
+{
+  "services": {
+    "set_vacation": {
+      "name": "Set vacation",
+      "description": "Sets the house-wide vacation switch of the heating control (optionally with start and end).",
+      "fields": {
+        "enabled": {"name": "Enabled", "description": "true = vacation set"},
+        "from": {"name": "Start", "description": "Date and time"},
+        "to": {"name": "End", "description": "Date and time (return)"}
+      }
+    },
+    "set_enabled": {
+      "name": "Enable or disable circuit",
+      "description": "Enables or disables a heating or cooling circuit (ID: see attribute circuits of sensor.<room>_heat_control).",
+      "fields": {
+        "circuit_id": {"name": "Circuit ID", "description": "ID of the circuit"},
+        "enabled": {"name": "Enabled", "description": "true = enabled"}
+      }
+    },
+    "reset_manual": {
+      "name": "Clear manual setpoint",
+      "description": "Ends a manually set setpoint; the circuit follows the schedule again.",
+      "fields": {
+        "circuit_id": {"name": "Circuit ID", "description": "ID of the circuit"}
+      }
+    }
+  }
+}

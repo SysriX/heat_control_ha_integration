@@ -1,0 +1,28 @@
+{
+  "services": {
+    "set_vacation": {
+      "name": "Urlaub setzen",
+      "description": "Schaltet den hausweiten Urlaubsschalter der Heizungssteuerung (optional mit Beginn und Ende).",
+      "fields": {
+        "enabled": {"name": "Aktiv", "description": "true = Urlaub eingetragen"},
+        "from": {"name": "Beginn", "description": "Datum und Uhrzeit"},
+        "to": {"name": "Ende", "description": "Datum und Uhrzeit (Rückkehr)"}
+      }
+    },
+    "set_enabled": {
+      "name": "Kreis ein-/ausschalten",
+      "description": "Schaltet einen Heiz- oder Kühlkreis aktiv oder inaktiv (ID siehe Attribut circuits von sensor.<raum>_heat_control).",
+      "fields": {
+        "circuit_id": {"name": "Kreis-ID", "description": "ID des Kreises"},
+        "enabled": {"name": "Aktiv", "description": "true = aktiv"}
+      }
+    },
+    "reset_manual": {
+      "name": "Hand-Wert aufheben",
+      "description": "Beendet einen von Hand gesetzten Sollwert, der Kreis folgt wieder dem Plan.",
+      "fields": {
+        "circuit_id": {"name": "Kreis-ID", "description": "ID des Kreises"}
+      }
+    }
+  }
+}

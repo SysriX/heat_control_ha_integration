@@ -2,6 +2,12 @@
 
 Heating and cooling control for Home Assistant with circuits per room. A circuit is one or more `climate` devices sharing one set of temperatures; heating circuits (thermostats) and cooling circuits (air conditioners, optionally a heat pump) run separately.
 
+![Heat Control preview](docs/images/preview.png)
+*Heating tab in the [Room Panel card](https://github.com/SysriX/room_panel_ha_card): temperatures per time of day, away / vacation and frost protection for a heating circuit (UI in German)*
+
+![Heat Control overview](docs/images/overview.png)
+*Overview of a heating circuit: current target, status, devices and outdoor temperature / heating limit (UI in German)*
+
 Integration domain: `heat_control`  
 Version: 1.0.0  
 UI language of the built-in texts (status, reasons): German
